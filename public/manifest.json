@@ -3,6 +3,11 @@
   "name": "ASCII Habitat",
   "version": "0.1.0",
   "description": "A living New Tab filled with animated ASCII animals.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "chrome_url_overrides": {
     "newtab": "index.html"
   }
