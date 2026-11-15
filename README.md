@@ -2,7 +2,7 @@
 
 ASCII Habitat is a Chrome New Tab extension built on this repository's ASCII animal engine. Each species has its own detailed character-cell design, movement, depth, and reaction to clicks. The Tweaks panel keeps movement and appearance controls, with settings saved separately for each animal.
 
-By [Aditya Joshi](https://adi-21-4.github.io/) · [GitHub profile](https://github.com/adi-21-4)
+By [Aditya Joshi](https://adi-21-4.github.io/) · [GitHub profile](https://github.com/adi-21-4) · [ASCII Habitat source](https://github.com/adi-21-4/ascii-habitat)
 
 The New Tab page keeps the greeting, a compact current-animal picker that expands on click, six quick links (Gmail, YouTube, ChatGPT, Slack, GitHub, and Notion), and a live local clock/date above the animated habitat.
 

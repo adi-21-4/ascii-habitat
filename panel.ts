@@ -191,8 +191,17 @@ export function mountTweakPanel<T extends Knobs>(
     el("span", "creator-copy", "More by Aditya Joshi"),
     el("span", "creator-cta", "Portfolio ↗"),
   );
+  const sourceLink = el("a", "creator-link glass");
+  sourceLink.href = "https://github.com/adi-21-4/ascii-habitat";
+  sourceLink.target = "_blank";
+  sourceLink.rel = "noopener noreferrer";
+  sourceLink.setAttribute("aria-label", "View ASCII Habitat source on GitHub");
+  sourceLink.append(
+    el("span", "creator-copy", "ASCII Habitat source"),
+    el("span", "creator-cta", "GitHub ↗"),
+  );
   const body = el("div", "tweaks-body");
-  panel.append(header, creator, body);
+  panel.append(header, creator, sourceLink, body);
 
   const opener = el("button", "tweaks-open glass");
   opener.innerHTML = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg><span>Tweaks</span>`;

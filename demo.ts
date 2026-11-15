@@ -97,14 +97,17 @@ const defaultQuickLinks: QuickLink[] = [
   { label: "YouTube", url: "https://youtube.com/" },
   { label: "ChatGPT", url: "https://chatgpt.com/" },
   { label: "Slack", url: "https://slack.com/" },
-  { label: "GitHub", url: "https://github.com/" },
+  { label: "GitHub", url: "https://github.com/adi-21-4" },
   { label: "Notion", url: "https://notion.so/" },
 ];
 let quickLinks = defaultQuickLinks;
 try {
   const savedLinks = JSON.parse(localStorage.getItem(quickLinksKey) ?? "null");
-  if (Array.isArray(savedLinks)) quickLinks = savedLinks.filter((link): link is QuickLink =>
-    link && typeof link.label === "string" && typeof link.url === "string");
+  if (Array.isArray(savedLinks)) quickLinks = savedLinks
+    .filter((link): link is QuickLink => link && typeof link.label === "string" && typeof link.url === "string")
+    .map((link) => link.label === "GitHub" && link.url === "https://github.com/"
+      ? { ...link, url: "https://github.com/adi-21-4" }
+      : link);
 } catch { /* Start with the curated shortcuts. */ }
 
 function saveQuickLinks() {
