@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "ASCII Habitat",
+  "version": "0.1.0",
+  "description": "A living New Tab filled with animated ASCII animals.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
